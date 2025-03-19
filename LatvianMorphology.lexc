@@ -1,0 +1,138 @@
+! Bloks 1: Multichar simbolu definēšana
+Multichar_Symbols
+        +N      ! Noun tag
+        +A      ! Adjective tag
+        +V      ! Verb tag
+        +Sg     ! Singular
+        +Pl     ! Plural
+        +Nom
+        +Gen
+        +Dat
+        +Acc
+        +Loc
+        +Masc   ! Masculine
+        +Fem    ! Feminine
+        +Def    ! Definite
+        +Pres   ! Present tense
+        +1P     ! 1st person
+        +2P     ! 2nd person
+        +3P     ! 3rd person
+
+! Bloks 2: Saknes leksikona definēšana
+LEXICON Root
+  Nouns ;
+  Adjectives ;
+  Verbs ;
+
+! Bloks 3: Lietvārdu leksikona definēšana
+LEXICON Nouns
+  vilk  Decl1 ;    ! 1. deklinācija
+  tēv   Decl1 ;    ! 1. deklinācija
+  kaln  Decl1 ;    ! 1. deklinācija
+  gald  Decl2 ;    ! 2. deklinācija
+  krēsl Decl2 ;    ! 2. deklinācija
+  log   Decl2 ;    ! 2. deklinācija
+  up    Decl6 ;    ! 6. deklinācija
+  dab   Decl6 ;    ! 6. deklinācija
+  pil   Decl6 ;    ! 6. deklinācija
+
+! Bloks 4: Īpašības vārdu leksikona definēšana
+LEXICON Adjectives
+  liel  AdjMascSgDef ;   ! Vīriešu dzimtes vienskaitļa noteiktā forma
+  zaļ   AdjMascSgDef ;   ! Vīriešu dzimtes vienskaitļa noteiktā forma
+  gudr  AdjMascSgDef ;   ! Vīriešu dzimtes vienskaitļa noteiktā forma
+  liel  AdjFemSgDef ;    ! Sieviešu dzimtes vienskaitļa noteiktā forma
+  zaļ   AdjFemSgDef ;    ! Sieviešu dzimtes vienskaitļa noteiktā forma
+  gudr  AdjFemSgDef ;    ! Sieviešu dzimtes vienskaitļa noteiktā forma
+  liel  AdjMascPlDef ;   ! Vīriešu dzimtes daudzskaitļa noteiktā forma
+  zaļ   AdjMascPlDef ;   ! Vīriešu dzimtes daudzskaitļa noteiktā forma
+  gudr  AdjMascPlDef ;   ! Vīriešu dzimtes daudzskaitļa noteiktā forma
+
+! Bloks 5: Darbības vārdu leksikona definēšana
+LEXICON Verbs
+  dziedā Conj1 ;    ! 1. konjugācija
+  rakstī Conj1 ;    ! 1. konjugācija
+  dzīvo  Conj1 ;    ! 1. konjugācija
+  redzē  Conj2 ;    ! 2. konjugācija
+  dzirdē Conj2 ;    ! 2. konjugācija
+  gribē  Conj2 ;    ! 2. konjugācija
+  lasī   Conj3 ;    ! 3. konjugācija
+  gulē   Conj3 ;    ! 3. konjugācija
+  mazgā  Conj3 ;    ! 3. konjugācija
+
+! Bloks 6: 1. deklinācijas paradigmas definēšana (vīriešu dzimte, -s, -š)
+LEXICON Decl1
++N+Sg+Nom:^s  # ;
++N+Sg+Gen:^a  # ;
++N+Sg+Dat:^am # ;
++N+Sg+Acc:^u  # ;
++N+Sg+Loc:^ā  # ;
++N+Pl+Nom:^i  # ;
++N+Pl+Gen:^u  # ;
++N+Pl+Dat:^iem # ;
++N+Pl+Acc:^us # ;
++N+Pl+Loc:^os # ;
+
+! Bloks 7: 2. deklinācijas paradigmas definēšana (vīriešu dzimte, -is)
+LEXICON Decl2
++N+Sg+Nom:^s  # ;
++N+Sg+Gen:^a  # ;
++N+Sg+Dat:^am # ;
++N+Sg+Acc:^u  # ;
++N+Sg+Loc:^ā  # ;
++N+Pl+Nom:^i  # ;
++N+Pl+Gen:^u  # ;
++N+Pl+Dat:^iem # ;
++N+Pl+Acc:^us # ;
++N+Pl+Loc:^os # ;
+
+! Bloks 8: 6. deklinācijas paradigmas definēšana (sieviešu dzimte, -e)
+LEXICON Decl6
++N+Sg+Nom:^e  # ;
++N+Sg+Gen:^es # ;
++N+Sg+Dat:^ei # ;
++N+Sg+Acc:^i  # ;
++N+Sg+Loc:^ē  # ;
++N+Pl+Nom:^es # ;
++N+Pl+Gen:^u  # ;
++N+Pl+Dat:^ēm # ;
++N+Pl+Acc:^es # ;
++N+Pl+Loc:^ēs # ;
+
+! Bloks 9: Īpašības vārdu paradigmas definēšana
+! Vīriešu dzimtes vienskaitļa noteiktā forma
+LEXICON AdjMascSgDef
++A+Masc+Sg+Def+Nom:^ais # ;
++A+Masc+Sg+Def+Gen:^ā   # ;
++A+Masc+Sg+Def+Dat:^ajam # ;
+
+! Sieviešu dzimtes vienskaitļa noteiktā forma
+LEXICON AdjFemSgDef
++A+Fem+Sg+Def+Nom:^ā   # ;
++A+Fem+Sg+Def+Gen:^ās  # ;
++A+Fem+Sg+Def+Dat:^ajai # ;
+
+! Vīriešu dzimtes daudzskaitļa noteiktā forma
+LEXICON AdjMascPlDef
++A+Masc+Pl+Def+Nom:^ie  # ;
++A+Masc+Pl+Def+Gen:^o   # ;
++A+Masc+Pl+Def+Dat:^ajiem # ;
+
+! Bloks 10: Darbības vārdu paradigmas definēšana
+! 1. konjugācija
+LEXICON Conj1
++V+Pres+1P+Sg:^u  # ;
++V+Pres+2P+Sg:^i  # ;
++V+Pres+3P+Sg:^a  # ;
+
+! 2. konjugācija
+LEXICON Conj2
++V+Pres+1P+Sg:^u  # ;
++V+Pres+2P+Sg:^i  # ;
++V+Pres+3P+Sg:^a  # ;
+
+! 3. konjugācija
+LEXICON Conj3
++V+Pres+1P+Sg:^u  # ;
++V+Pres+2P+Sg:^i  # ;
++V+Pres+3P+Sg:^a  # ;
