@@ -16,15 +16,16 @@ LEXICON Root
 LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
- kaķ N1dekl ;
+ ! kaķ N1dekl ;  <- NEPAREIZI, jābūt N2dekl
  dārz N2dekl ;
  skap N2dekl ;
  ceļ N2dekl ;
  māt N3dekl ;
  saul N3dekl ;
  zem N3dekl ;
+ kaķ N2dekl ;  ! <- PAREIZI
 
-! 1. deklinācija (zēns, mežs, kaķs)
+! 1. deklinācija (zēns, mežs)
 LEXICON N1dekl
 +N+Sg+Nom:s # ;
 +N+Sg+Gen:^a # ;
@@ -37,18 +38,18 @@ LEXICON N1dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 2. deklinācija (dārzs, skapis, ceļš)
+! 2. deklinācija (dārzs, skapis, ceļš, kaķis)
 LEXICON N2dekl
-+N+Sg+Nom:is # ;          ! dārz+N+Sg+Nom -> dārzis
++N+Sg+Nom:is # ;
 +N+Sg+Gen:^a # ;
 +N+Sg+Dat:^am # ;
-+N+Sg+Acc:^i # ;         ! dārz+N+Sg+Acc -> dārzi
++N+Sg+Acc:^i # ;
 +N+Sg+Loc:^ī # ;
-+N+Pl+Nom:^i # ;          ! skap+N+Pl+Nom -> skapi
++N+Pl+Nom:^i # ;
 +N+Pl+Gen:^u # ;
 +N+Pl+Dat:^iem # ;
 +N+Pl+Acc:^us # ;
-+N+Pl+Loc:^os # ;         ! skap+N+Pl+Loc -> skapos
++N+Pl+Loc:^os # ;
 
 ! 3. deklinācija (māte, saule, zeme)
 LEXICON N3dekl
@@ -58,7 +59,7 @@ LEXICON N3dekl
 +N+Sg+Acc:i # ;
 +N+Sg+Loc:ē # ;
 +N+Pl+Nom:es # ;
-+N+Pl+Gen:u # ;          ! saul+N+Pl+Gen -> saulu
++N+Pl+Gen:u # ;
 +N+Pl+Dat:ēm # ;
 +N+Pl+Acc:es # ;
 +N+Pl+Loc:ēs # ;
