@@ -39,7 +39,7 @@ LEXICON N1dekl
 
 ! 3. deklinācija (alus, lietus, tirgus)
 LEXICON N3dekl
-+N+Sg+Nom^us # ;    
++N+Sg+Nom:us # ;    
 +N+Sg+Gen:us # ;    
 +N+Sg+Dat:um # ;
 +N+Sg+Acc:u # ;
