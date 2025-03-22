@@ -26,7 +26,7 @@ LEXICON Nouns
 
 ! 1. deklinācija (zēns, mežs, dārzs, ceļš)
 LEXICON N1dekl
-+N+Sg+Nom:s # ;  ! zēn+N+Sg+Nom -> zēns, mež+N+Sg+Nom -> mežs
++N+Sg+Nom:s # ;
 +N+Sg+Gen:^a # ;
 +N+Sg+Dat:^am # ;
 +N+Sg+Acc:^u # ;
@@ -40,15 +40,15 @@ LEXICON N1dekl
 ! 2. deklinācija (kaķis, skapis)
 LEXICON N2dekl
 +N+Sg+Nom:s # ;    ! kaķi+N+Sg+Nom -> kaķis, skapi+N+Sg+Nom -> skapis
-+N+Sg+Gen:^a # ;
-+N+Sg+Dat:^im # ;  ! kaķi+N+Sg+Dat -> kaķim, skapi+N+Sg+Dat -> skapim
-+N+Sg+Acc:^i # ;
-+N+Sg+Loc:^ī # ;
-+N+Pl+Nom:^i # ;
-+N+Pl+Gen:^u # ;
-+N+Pl+Dat:^iem # ;
-+N+Pl+Acc:^us # ;
-+N+Pl+Loc:^os # ;
++N+Sg+Gen:a # ;    ! kaķi+N+Sg+Gen -> kaķa, skapi+N+Sg+Gen -> skapja
++N+Sg+Dat:im # ;
++N+Sg+Acc:i # ;
++N+Sg+Loc:ī # ;
++N+Pl+Nom:i # ;
++N+Pl+Gen:u # ;
++N+Pl+Dat:iem # ;
++N+Pl+Acc:us # ;
++N+Pl+Loc:os # ;
 
 ! 5. deklinācija (māte, saule, zeme)
 LEXICON N5dekl
@@ -58,7 +58,7 @@ LEXICON N5dekl
 +N+Sg+Acc:i # ;
 +N+Sg+Loc:ē # ;
 +N+Pl+Nom:es # ;
-+N+Pl+Gen:u # ;        ! māšu, sauļu, zemju - šeit ir neregulāras formas
++N+Pl+Gen:u # ;
 +N+Pl+Dat:ēm # ;
 +N+Pl+Acc:es # ;
 +N+Pl+Loc:ēs # ;
