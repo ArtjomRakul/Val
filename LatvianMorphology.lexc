@@ -13,6 +13,7 @@ LEXICON Root
   Nouns ;
 
 !Define noun lexicon
+
 LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
