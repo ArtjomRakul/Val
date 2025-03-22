@@ -17,12 +17,12 @@ LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
  dārz N1dekl ;
- al N3dekl ;
- liet N3dekl ;  
- tirg N3dekl ; 
  māt N5dekl ;   
  saul N5dekl ;
  zem N5dekl ;
+ ac N5dekl ;   
+ aus N5dekl ;
+ sird N5dekl ;
 
 ! 1. deklinācija (zēns, mežs, dārzs)
 LEXICON N1dekl
@@ -37,28 +37,28 @@ LEXICON N1dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 3. deklinācija (alus, lietus, tirgus)
-LEXICON N3dekl
-+N+Sg+Nom:us # ;    
-+N+Sg+Gen:us # ;    
-+N+Sg+Dat:um # ;
-+N+Sg+Acc:u # ;
-+N+Sg+Loc:ū # ;
-+N+Pl+Nom:i # ;
-+N+Pl+Gen:u # ;
-+N+Pl+Dat:iem # ;
-+N+Pl+Acc:us # ;
-+N+Pl+Loc:os # ;
-
 ! 5. deklinācija (māte, saule, zeme)
 LEXICON N5dekl
-+N+Sg+Nom:e # ;
-+N+Sg+Gen:es # ;
-+N+Sg+Dat:ei # ;
-+N+Sg+Acc:i # ;
-+N+Sg+Loc:ē # ;
-+N+Pl+Nom:es # ;
-+N+Pl+Gen:u # ;
-+N+Pl+Dat:ēm # ;
-+N+Pl+Acc:es # ;
-+N+Pl+Loc:ēs # ;
++N+Sg+Nom:^e # ;
++N+Sg+Gen:^es # ;
++N+Sg+Dat:^ei # ;
++N+Sg+Acc:^i # ;
++N+Sg+Loc:^ē # ;
++N+Pl+Nom:^es # ;
++N+Pl+Gen:^u # ;
++N+Pl+Dat:^ēm # ;
++N+Pl+Acc:^es # ;
++N+Pl+Loc:^ēs # ;
+
+! 6. deklinācija (acs, auss, sirds)
+LEXICON N6dekl
++N+Sg+Nom:^s # ;    
++N+Sg+Gen:^s # ;    
++N+Sg+Dat:^ij # ;
++N+Sg+Acc:^i # ;
++N+Sg+Loc:^ī # ;
++N+Pl+Nom:^is # ;
++N+Pl+Gen:^u # ;
++N+Pl+Dat:^īm # ;
++N+Pl+Acc:^is # ;
++N+Pl+Loc:^īs # ;
