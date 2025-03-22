@@ -16,15 +16,15 @@ LEXICON Root
 LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
- kaķ N2dekl ;  ! "kaķis" - celms ir "kak"
  dārz N1dekl ;
- tēt N2dekl ; ! "tētis" - celms ir "tet"
- ceļ N1dekl ;
- māt N5dekl ;   ! 5. deklinācija
+ asar N2dekl ;
+ kaķ N2dekl ;  
+ tēt N2dekl ; 
+ māt N5dekl ;   
  saul N5dekl ;
  zem N5dekl ;
 
-! 1. deklinācija (zēns, mežs, dārzs, ceļš)
+! 1. deklinācija (zēns, mežs, dārzs)
 LEXICON N1dekl
 +N+Sg+Nom:s # ;
 +N+Sg+Gen:^a # ;
@@ -37,10 +37,10 @@ LEXICON N1dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 2. deklinācija (kaķis, tētis)
+! 2. deklinācija (kaķis, tētis, asaris)
 LEXICON N2dekl
-+N+Sg+Nom:is # ;    ! kaķi+N+Sg+Nom -> kaķis, skapi+N+Sg+Nom -> skapis
-+N+Sg+Gen:a # ;    ! kaķi+N+Sg+Gen -> kaķa, skapi+N+Sg+Gen -> skapja
++N+Sg+Nom:is # ;    
++N+Sg+Gen:a # ;    
 +N+Sg+Dat:im # ;
 +N+Sg+Acc:i # ;
 +N+Sg+Loc:ī # ;
