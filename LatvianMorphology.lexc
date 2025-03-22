@@ -15,7 +15,7 @@ LEXICON Root
 !Define noun lexicon
 
 LEXICON Nouns
- zēn N1dekl ;
+ ceļ N1dekl ;
  mež N1dekl ;
  dārz N1dekl ;
  māt N5dekl ;   
@@ -25,9 +25,9 @@ LEXICON Nouns
  aus N6dekl ;
  sird N6dekl ;
 
-! 1. deklinācija (zēns, mežs, dārzs)
+! 1. deklinācija (ceļš, mežs, dārzs)
 LEXICON N1dekl
-+N+Sg+Nom:s # ;
++N+Sg+Nom:^s # ;
 +N+Sg+Gen:^a # ;
 +N+Sg+Dat:^am # ;
 +N+Sg+Acc:^u # ;
