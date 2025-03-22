@@ -27,7 +27,7 @@ LEXICON Nouns
 
 ! 1. deklinācija (ceļš, mežs, dārzs)
 LEXICON N1dekl
-+N+Sg+Nom:^s # ;
++N+Sg+Nom:^Ms # ;
 +N+Sg+Gen:^a # ;
 +N+Sg+Dat:^am # ;
 +N+Sg+Acc:^u # ;
