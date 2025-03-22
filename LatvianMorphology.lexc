@@ -1,126 +1,82 @@
-Multichar_Symbols
-        +N      ! Lietvārda tags
-        +A      ! Īpašības vārda tags
-        +V      ! Darbības vārda tags
-        +Sg     ! Vienskaitlis
-        +Pl     ! Daudzskaitlis
-        +Nom    ! Nominatīvs
-        +Gen    ! Ģenitīvs
-        +Dat    ! Datīvs
-        +Acc    ! Akuzatīvs
-        +Loc    ! Lokatīvs
-        +M      ! Vīriešu dzimte
-        +F      ! Sieviešu dzimte
-        +PastInd ! Pagātnes indikātīvs
-        +PresInd ! Tagadnes indikātīvs
-        +FutInd  ! Nākotnes indikātīvs
-        +1P      ! 1. persona
-        +2P      ! 2. persona
-        +3P      ! 3. persona
+! Multichar_Symbols
+   +N      ! Lietvārds
+   +V      ! Darbības vārds
+   +Sg     ! Vienskaitlis
+   +Pl     ! Daudzskaitlis
+   +Nom    ! Nominatīvs
+   +Gen    ! Ģenitīvs
+   +Dat    ! Datīvs
+   +Acc    ! Akuzatīvs
+   +Loc    ! Lokatīvs
 
-!Saknes leksikons
+!==============================================================
+! Leksikona definīcija
 LEXICON Root
-  Nouns ; 
-  Adjectives ;
-  Verbs ;
+  suns    N1decl;
+  koks    N1decl;
+  galds   N1decl;
+  māja    N2decl;
+  grāmata N2decl;
+  loga    N2decl;
+  akmens  N3decl;
+  biks    N3decl;
+  liks    N3decl;
+  skriet  VInf;
 
-!Lietvārdu leksikons
-LEXICON Nouns
-  kok   N1dekl ; ! koks (tree)
-  ciem  N1dekl ; ! ciems (village)
-  vīr   N1dekl ; ! vīrs (man)
-  mās   N4dekl ; ! māsa (sister)
-  pil   N4dekl ; ! pils (castle)
-  egl   N4dekl ; ! egle (fir tree)
-  led   N2dekl ; ! ledus (ice)
-  med   N2dekl ; ! medus (honey)
-  kād   N2dekl ; ! kādus (something)
-  svin  N_plurale_tantum ; ! svini (celebration)
-  dur   N_plurale_tantum ; ! durvis (door)
+!==============================================================
+! N1decl – parastā deklinācija (maskulīni, beidzas ar "-s")
+LEXICON N1decl
+  +N+Sg+Nom:^s;
+  +N+Sg+Gen:^a;
+  +N+Sg+Dat:^am;
+  +N+Sg+Acc:^u;
+  +N+Sg+Loc:^ā;
+  
+  +N+Pl+Nom:^i;
+  +N+Pl+Gen:^u;
+  +N+Pl+Dat:^iem;
+  +N+Pl+Acc:^us;
+  +N+Pl+Loc:^os;
 
-!Īpašības vārdu leksikons
-LEXICON Adjectives
-  lab   A1dekl ; ! labs (good)
-  jauk  A1dekl ; ! jauks (nice)
-  vēs   A1dekl ; ! vēss (cool)
+!==============================================================
+! N2decl – deklinācija (feminīni, beidzas ar "-a")
+LEXICON N2decl
+  +N+Sg+Nom:^a;
+  +N+Sg+Gen:^as;
+  +N+Sg+Dat:^ai;
+  +N+Sg+Acc:^u;
+  +N+Sg+Loc:^ā;
+  
+  +N+Pl+Nom:^as;
+  +N+Pl+Gen:^u;
+  +N+Pl+Dat:^ām;
+  +N+Pl+Acc:^as;
+  +N+Pl+Loc:^ās;
 
-!Darbības vārdu leksikons
-LEXICON Verbs
-  las   V1conj ; ! lasīt (to read)
-  rak   V1conj ; ! rakstīt (to write)
-  dzied V1conj ; ! dziedāt (to sing)
+!==============================================================
+! N3decl – īpašs gadījums (maskulīni ar īpašu pluralizāciju)
+! Vienskaitlis – paliek nemainīgs
+LEXICON N3decl
+  +N+Sg+Nom:^s;
+  +N+Sg+Gen:^a;
+  +N+Sg+Dat:^am;
+  +N+Sg+Acc:^u;
+  +N+Sg+Loc:^ā;
+  
+! Daudzskaitlis – nominatīvs un ģenitīvs ar īpašiem marķieriem
+  +N+Pl+Nom:^si;   ! “s” tiks aizstāts ar “ņ” (likums, redz zemāk)
+  +N+Pl+Gen:^suX;  ! Marķieris "X" jādzēš (dzēšanas likums)
+  +N+Pl+Dat:^iem;
+  +N+Pl+Acc:^us;
+  +N+Pl+Loc:^os;
 
-! 1. deklinācija (vīriešu dzimtes lietvārdi ar -s galotni)
-LEXICON N1dekl
-+N+M+Sg+Nom:^s   # ;
-+N+M+Sg+Gen:^a   # ;
-+N+M+Sg+Dat:^am  # ;
-+N+M+Sg+Acc:^u   # ;
-+N+M+Sg+Loc:^ā   # ;
-+N+M+Pl+Nom:^i   # ;
-+N+M+Pl+Gen:^u   # ;
-+N+M+Pl+Dat:^iem # ;
-+N+M+Pl+Acc:^us  # ;
-+N+M+Pl+Loc:^os  # ;
-
-! 2. deklinācija (vīriešu dzimtes lietvārdi ar -us galotni)
-LEXICON N2dekl
-+N+M+Sg+Nom:^us  # ;
-+N+M+Sg+Gen:^us  # ;
-+N+M+Sg+Dat:^um  # ;
-+N+M+Sg+Acc:^u   # ;
-+N+M+Sg+Loc:^ū   # ;
-+N+M+Pl+Nom:^i   # ;
-+N+M+Pl+Gen:^u   # ;
-+N+M+Pl+Dat:^iem # ;
-+N+M+Pl+Acc:^us  # ;
-+N+M+Pl+Loc:^os  # ;
-
-! 4. deklinācija (sieviešu dzimtes lietvārdi ar -a vai -e galotni)
-LEXICON N4dekl
-+N+F+Sg+Nom:^a   # ;
-+N+F+Sg+Gen:^as  # ;
-+N+F+Sg+Dat:^ai  # ;
-+N+F+Sg+Acc:^u   # ;
-+N+F+Sg+Loc:^ā   # ;
-+N+F+Pl+Nom:^as  # ;
-+N+F+Pl+Gen:^u   # ;
-+N+F+Pl+Dat:^ām  # ;
-+N+F+Pl+Acc:^as  # ;
-+N+F+Pl+Loc:^ās  # ;
-
-! Pluralia tantum (lietvārdi, kas eksistē tikai daudzskaitlī)
-LEXICON N_plurale_tantum
-+N+F+Pl+Nom:^is  # ;
-+N+F+Pl+Gen:^u   # ;
-+N+F+Pl+Dat:^īm  # ;
-+N+F+Pl+Acc:^is  # ;
-+N+F+Pl+Loc:^īs  # ;
-
-! Īpašības vārdu 1. deklinācija
-LEXICON A1dekl
-+A+M+Sg+Nom:^s   # ;
-+A+M+Sg+Gen:^a   # ;
-+A+M+Sg+Dat:^am  # ;
-+A+M+Sg+Acc:^u   # ;
-+A+M+Sg+Loc:^ā   # ;
-+A+F+Sg+Nom:^a   # ;
-+A+F+Sg+Gen:^as  # ;
-+A+F+Sg+Dat:^ai  # ;
-+A+F+Sg+Acc:^u   # ;
-+A+F+Sg+Loc:^ā   # ;
-
-! Darbības vārdu 1. konjugācija
-LEXICON V1conj
-+V+PresInd+1P+Sg:^u     # ;
-+V+PresInd+2P+Sg:^i     # ;
-+V+PresInd+3P+Sg:^      # ;
-+V+PresInd+1P+Pl:^am    # ;
-+V+PresInd+2P+Pl:^at    # ;
-+V+PresInd+3P+Pl:^      # ;
-+V+PastInd+1P+Sg:^ju    # ;
-+V+PastInd+2P+Sg:^ji    # ;
-+V+PastInd+3P+Sg:^ja    # ;
-+V+PastInd+1P+Pl:^jām   # ;
-+V+PastInd+2P+Pl:^jāt   # ;
-+V+PastInd+3P+Pl:^ja    # ;
+!==============================================================
+! VInf – darbības vārda leksikons (piemēram, "skriet")
+LEXICON VInf
+  +V+Sg+1:^skrie;
+  +V+Sg+2:^skrie;
+  +V+Sg+3:^skrie;
+  
+  +V+Pl+1:^skriet;
+  +V+Pl+2:^skriet;
+  +V+Pl+3:^skriet;
