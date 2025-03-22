@@ -16,9 +16,9 @@ LEXICON Root
 LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
- kaķi N2dekl ;  ! "kaķis" - celms ir "kaķi"
+ kaķ N2dekl ;  ! "kaķis" - celms ir "kak"
  dārz N1dekl ;
- skapi N2dekl ; ! "skapis" - celms ir "skapi"
+ skap N2dekl ; ! "skapis" - celms ir "skap"
  ceļ N1dekl ;
  māt N5dekl ;   ! 5. deklinācija
  saul N5dekl ;
@@ -39,7 +39,7 @@ LEXICON N1dekl
 
 ! 2. deklinācija (kaķis, skapis)
 LEXICON N2dekl
-+N+Sg+Nom:s # ;    ! kaķi+N+Sg+Nom -> kaķis, skapi+N+Sg+Nom -> skapis
++N+Sg+Nom:is # ;    ! kaķi+N+Sg+Nom -> kaķis, skapi+N+Sg+Nom -> skapis
 +N+Sg+Gen:a # ;    ! kaķi+N+Sg+Gen -> kaķa, skapi+N+Sg+Gen -> skapja
 +N+Sg+Dat:im # ;
 +N+Sg+Acc:i # ;
