@@ -18,7 +18,7 @@ LEXICON Nouns
  mež N1dekl ;
  kaķ N2dekl ;  ! "kaķis" - celms ir "kak"
  dārz N1dekl ;
- skap N2dekl ; ! "skapis" - celms ir "skap"
+ tēt N2dekl ; ! "tētis" - celms ir "tet"
  ceļ N1dekl ;
  māt N5dekl ;   ! 5. deklinācija
  saul N5dekl ;
@@ -37,7 +37,7 @@ LEXICON N1dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 2. deklinācija (kaķis, skapis)
+! 2. deklinācija (kaķis, tētis)
 LEXICON N2dekl
 +N+Sg+Nom:is # ;    ! kaķi+N+Sg+Nom -> kaķis, skapi+N+Sg+Nom -> skapis
 +N+Sg+Gen:a # ;    ! kaķi+N+Sg+Gen -> kaķa, skapi+N+Sg+Gen -> skapja
