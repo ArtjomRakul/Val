@@ -16,18 +16,17 @@ LEXICON Root
 LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
- ! kaķ N1dekl ;  <- NEPAREIZI, jābūt N2dekl
- dārz N2dekl ;
- skap N2dekl ;
- ceļ N2dekl ;
- māt N3dekl ;
- saul N3dekl ;
- zem N3dekl ;
- kaķ N2dekl ;  ! <- PAREIZI
+ kaķi N2dekl ;  ! "kaķis" - celms ir "kaķi"
+ dārz N1dekl ;
+ skapi N2dekl ; ! "skapis" - celms ir "skapi"
+ ceļ N1dekl ;
+ māt N5dekl ;   ! 5. deklinācija
+ saul N5dekl ;
+ zem N5dekl ;
 
-! 1. deklinācija (zēns, mežs)
+! 1. deklinācija (zēns, mežs, dārzs, ceļš)
 LEXICON N1dekl
-+N+Sg+Nom:s # ;
++N+Sg+Nom:s # ;  ! zēn+N+Sg+Nom -> zēns, mež+N+Sg+Nom -> mežs
 +N+Sg+Gen:^a # ;
 +N+Sg+Dat:^am # ;
 +N+Sg+Acc:^u # ;
@@ -38,11 +37,11 @@ LEXICON N1dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 2. deklinācija (dārzs, skapis, ceļš, kaķis)
+! 2. deklinācija (kaķis, skapis)
 LEXICON N2dekl
-+N+Sg+Nom:is # ;
++N+Sg+Nom:s # ;    ! kaķi+N+Sg+Nom -> kaķis, skapi+N+Sg+Nom -> skapis
 +N+Sg+Gen:^a # ;
-+N+Sg+Dat:^am # ;
++N+Sg+Dat:^im # ;  ! kaķi+N+Sg+Dat -> kaķim, skapi+N+Sg+Dat -> skapim
 +N+Sg+Acc:^i # ;
 +N+Sg+Loc:^ī # ;
 +N+Pl+Nom:^i # ;
@@ -51,15 +50,15 @@ LEXICON N2dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 3. deklinācija (māte, saule, zeme)
-LEXICON N3dekl
+! 5. deklinācija (māte, saule, zeme)
+LEXICON N5dekl
 +N+Sg+Nom:e # ;
 +N+Sg+Gen:es # ;
 +N+Sg+Dat:ei # ;
 +N+Sg+Acc:i # ;
 +N+Sg+Loc:ē # ;
 +N+Pl+Nom:es # ;
-+N+Pl+Gen:u # ;
++N+Pl+Gen:u # ;        ! māšu, sauļu, zemju - šeit ir neregulāras formas
 +N+Pl+Dat:ēm # ;
 +N+Pl+Acc:es # ;
 +N+Pl+Loc:ēs # ;
