@@ -17,9 +17,9 @@ LEXICON Nouns
  zēn N1dekl ;
  mež N1dekl ;
  dārz N1dekl ;
- asar N2dekl ;
- kaķ N2dekl ;  
- tēt N2dekl ; 
+ al N3dekl ;
+ liet N3dekl ;  
+ tirg N3dekl ; 
  māt N5dekl ;   
  saul N5dekl ;
  zem N5dekl ;
@@ -37,13 +37,13 @@ LEXICON N1dekl
 +N+Pl+Acc:^us # ;
 +N+Pl+Loc:^os # ;
 
-! 2. deklinācija (kaķis, tētis, asaris)
-LEXICON N2dekl
-+N+Sg+Nom:is # ;    
-+N+Sg+Gen:a # ;    
-+N+Sg+Dat:im # ;
-+N+Sg+Acc:i # ;
-+N+Sg+Loc:ī # ;
+! 3. deklinācija (alus, lietus, tirgus)
+LEXICON N3dekl
++N+Sg+Nom:us # ;    
++N+Sg+Gen:us # ;    
++N+Sg+Dat:um # ;
++N+Sg+Acc:u # ;
++N+Sg+Loc:ū # ;
 +N+Pl+Nom:i # ;
 +N+Pl+Gen:u # ;
 +N+Pl+Dat:iem # ;
